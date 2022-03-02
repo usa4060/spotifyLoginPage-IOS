@@ -30,4 +30,4 @@
         4. User가 권한 위임 승인
         5. Google이 FireBase에 Token 승인
         6. 로그인 완료
-         
+---
