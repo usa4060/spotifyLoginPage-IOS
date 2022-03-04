@@ -51,3 +51,9 @@ if #available(iOS 15.0, *) {
 ```
 - 여기서 핵심은, ```scrollEdgeAppearance```를 ```standardAppearance```와 동일하게 설정해야한다는 것
 - 이러한 설정은 기본적으로 AppDelegate에서 실행되도록 하는것이 좋음
+
+### 2. GIDSignInDelegate 채택 시 문제 발생
+- 기본적으로 cocoapod에서 ```pod 'GoogleSignIn'```을 추가 후<br/>
+ ```GIDSignInDelegate``` 를 채택 할 경우 GoogleSignIn 6.0이상의 버전에서는 채택이 불가능한 상황을 발견 하였다.
+ - 이를 해결하기 위해 ```pod 'GoogleSignIn' , '~> 5.0'```를 새로 입력하여, 5.X 버젼으로 다운그레이드 할 필요가 있다.
+ - 이후에 GIDSignInDelegate를 정상적으로 채택 할 수 있다.
