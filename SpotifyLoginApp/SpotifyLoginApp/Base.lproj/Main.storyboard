@@ -231,7 +231,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtL-uS-INE">
-                                <rect key="frame" x="161" y="488" width="92" height="36"/>
+                                <rect key="frame" x="161" y="539" width="92" height="36"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log Out">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
@@ -241,17 +241,30 @@
                                     <action selector="logoutButtonTapped:" destination="ti4-KT-UjA" eventType="touchUpInside" id="5bC-g0-Oxo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOa-Dm-U91">
+                                <rect key="frame" x="157" y="488" width="100.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="비밀번호 변경">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetPasswordButtonTapped:" destination="ti4-KT-UjA" eventType="touchUpInside" id="BvX-4N-o0f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LqL-ns-maf"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LtL-uS-INE" firstAttribute="top" secondItem="29S-Q6-81O" secondAttribute="bottom" constant="20" id="d2p-Br-RxJ"/>
+                            <constraint firstItem="HOa-Dm-U91" firstAttribute="centerX" secondItem="LqL-ns-maf" secondAttribute="centerX" id="cDE-ph-hzD"/>
+                            <constraint firstItem="HOa-Dm-U91" firstAttribute="top" secondItem="29S-Q6-81O" secondAttribute="bottom" constant="20" id="dPF-2R-XwT"/>
+                            <constraint firstItem="LtL-uS-INE" firstAttribute="top" secondItem="HOa-Dm-U91" secondAttribute="bottom" constant="20" id="qUl-MK-czd"/>
                             <constraint firstItem="29S-Q6-81O" firstAttribute="centerY" secondItem="LqL-ns-maf" secondAttribute="centerY" id="xLz-Yz-wRC"/>
                             <constraint firstItem="29S-Q6-81O" firstAttribute="centerX" secondItem="LqL-ns-maf" secondAttribute="centerX" id="yCD-0Q-iDs"/>
                             <constraint firstItem="LtL-uS-INE" firstAttribute="centerX" secondItem="LqL-ns-maf" secondAttribute="centerX" id="ySZ-pr-x8c"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resetPasswordButton" destination="HOa-Dm-U91" id="2Yf-2V-lHK"/>
                         <outlet property="welcomeLabel" destination="29S-Q6-81O" id="J5k-KY-ifg"/>
                     </connections>
                 </viewController>

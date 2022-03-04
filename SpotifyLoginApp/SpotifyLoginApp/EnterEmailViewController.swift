@@ -40,12 +40,14 @@ class EnterEmailViewController : UIViewController{
             
             // 이메일 회원가입 시 에러처리 구문
             if let error = error {
+                
                 let code = (error as NSError).code
                 switch code {
-                case 17007: // 이미 가입 한 계정일 때
+                case 17007: // 이미 가입 한 계정일 때 (17007 error가 이미 있는 계정일 때 나오는 에러)
                     // 로그인하기
                     self.loginUser(withEmail: email, password: password)
                 default:
+                    // 기본 error 발생 안내 구문
                     self.errorTextField.text = error.localizedDescription
                 }
             }
