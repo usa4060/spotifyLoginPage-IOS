@@ -60,4 +60,4 @@ if #available(iOS 15.0, *) {
 
  ---
 
- # _*추가적으로, Apple 로그인의 경우 Apple Develope Membership에 가입해야 해서 비용 절감을 위해 따로 실제 기능 추가는 하지 않고 공부만 진행함...*_
+ # _*추가적으로, Apple 로그인의 경우 Apple Developer Membership에 가입해야 해서 비용 절감을 위해 따로 실제 기능 추가는 하지 않고 공부만 진행함...*_
