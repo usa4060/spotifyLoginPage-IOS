@@ -57,3 +57,7 @@ if #available(iOS 15.0, *) {
  ```GIDSignInDelegate``` 를 채택 할 경우 GoogleSignIn 6.0이상의 버전에서는 채택이 불가능한 상황을 발견 하였다.
  - 이를 해결하기 위해 ```pod 'GoogleSignIn' , '~> 5.0'```를 새로 입력하여, 5.X 버젼으로 다운그레이드 할 필요가 있다.
  - 이후에 GIDSignInDelegate를 정상적으로 채택 할 수 있다.
+
+ ---
+
+ # _*추가적으로, Apple 로그인의 경우 Apple Develope Membership에 가입해야 해서 비용 절감을 위해 따로 실제 기능 추가는 하지 않고 공부만 진행함...*_
